@@ -1,0 +1,9 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'Fractal 1D PC.blg'
+[262] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
+[263] Biber.pm:333> INFO - Reading 'Fractal 1D PC.bcf'
+[496] Biber.pm:645> INFO - Found 0 citekeys in bib section 0
+[496] Utils.pm:146> WARN - The file 'Fractal 1D PC.bcf' does not contain any citations!
+[633] bbl.pm:505> INFO - Writing 'Fractal 1D PC.bbl' with encoding 'UTF-8'
+[635] bbl.pm:596> INFO - Output to Fractal 1D PC.bbl
+[636] Biber.pm:106> INFO - WARNINGS: 1

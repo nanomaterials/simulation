@@ -1,0 +1,100 @@
+\usepackage{etex}
+\reserveinserts{28}
+
+\usepackage{comment}
+\usepackage{lipsum} % for some dummy text
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в фомулах
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs}    % Красивый матшрифт
+\usepackage{gensymb}     % Основные символы (degree sign)
+\usepackage{csquotes}
+
+% Таблицы
+\usepackage{tabularx}
+\usepackage{tabulary}
+
+% Гиперссылки
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={Конспект по курсу Наноматериалы},   % Заголовок
+	pdfauthor={Л.Б.Матюшкин, \\ асс. каф. микро- и наноэлектроники СПбГЭТУ <<ЛЭТИ>>},      % Автор
+	pdfsubject={Тема},      % Тема
+	pdfcreator={Создатель}, % Создатель
+	pdfproducer={Производитель}, % Производитель
+	pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
+	colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=blue,          % внутренние ссылки
+	citecolor=blue,         % на библиографию
+	filecolor=magenta,      % на файлы
+	urlcolor=blue           % на URL
+}
+
+%%% Список условных обозначений
+\usepackage{glossaries}
+\makeglossary    % Закомментируйте, если перечень не нужен
+
+%%% Изображения
+\usepackage{graphicx, color}
+\graphicspath{{../images/}}
+
+%%%Работа с цветом текста
+\usepackage{color}
+\newcommand{\hl}[1]{\colorbox{yellow}{#1}} % подсветка желтым
+
+
+% Список условных обозначений
+\usepackage{nomencl}
+\makenomenclature
+\newcommand*{\nom}[2]{#1\nomenclature{#1}{#2}}
+\makeatletter
+\patchcmd{\thenomenclature}{\section*}{\section}{}{}
+\makeatother
+\renewcommand{\nomname}{Перечень условных обозначений}
+
+%%% Предметный указатель
+\usepackage{makeidx}  % Составление предметного указателя
+\makeindex
+%\usepackage{showidx} % Показать части предметного указателя на правом поле
+
+\frenchspacing
+
+% Библиотека для добавления текста к рисунку
+\usepackage[percent]{overpic}
+\usepackage{nicefrac}
+
+\clubpenalty = 10000
+
+%%% Простая графика
+\usepackage{tikz}
+\usetikzlibrary{arrows, mindmap, trees, shadows, shapes, calc, fadings, positioning, decorations.pathreplacing, intersections}
+\tikzset{>=latex}
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%% Оформление химических формул
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}

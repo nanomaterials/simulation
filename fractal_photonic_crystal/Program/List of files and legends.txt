@@ -1,0 +1,45 @@
+list_of_structures = ['STS0.csv',
+                      'STS1.csv',
+                      'STS2.csv',
+                      'STS3.csv',
+                      'STS4.csv',
+                      'STS5.csv']
+
+legend_list = [r'$C_0$',
+               r'$C_1$',
+               r'$C_2$',
+               r'$C_3$',
+               r'$C_4$',
+               r'$C_5$']
+
+list_of_structures = ['PC2.csv',
+                      'PC3.csv',
+                      'PC4.csv']
+
+legend_list = [r'$C_2$',
+               r'$C_3$',
+               r'$C_4$']
+
+list_of_structures = ['TSST1.csv',
+                      'TSST2.csv',
+                      'TSST3.csv',
+                      'TSST4.csv',
+                      'TSST5.csv']
+
+legend_list = [r'$C_1$',
+               r'$C_2$',
+               r'$C_3$',
+               r'$C_4$',
+               r'$C_5$']
+
+list_of_structures = ['STTS1.csv',
+                      'STTS2.csv',
+                      'STTS3.csv',
+                      'STTS4.csv',
+                      'STTS5.csv']
+
+legend_list = [r'$C_1$',
+               r'$C_2$',
+               r'$C_3$',
+               r'$C_4$',
+               r'$C_5$']
